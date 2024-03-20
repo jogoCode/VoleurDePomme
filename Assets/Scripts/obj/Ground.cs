@@ -77,7 +77,7 @@ public class Ground : MonoBehaviour,ICase
                 }
                 else if (_theWorld[i, j] == _throw)
                 {
-                    //trou
+                    Instantiate(_lavaPrefab, pos, Quaternion.identity);
                 }
                 else if (_theWorld[i, j] == _lava)
                 {

@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Player\Killable.cs" />
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\algo\Case.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -54,7 +54,7 @@ public class test : MonoBehaviour
             {
                 //int y = Random.Range(-1, 2);
                 float y = Mathf.PerlinNoise(i / 10f, j / 10f) * 4;
-                Vector3 pos = new Vector3(i, y, j);
+                Vector3 pos = new Vector3(i, 1, j);
 
                 if (_theWorld[i, j] == 0)
                 {
