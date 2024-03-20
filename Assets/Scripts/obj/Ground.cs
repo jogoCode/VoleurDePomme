@@ -67,8 +67,10 @@ public class Ground : MonoBehaviour,ICase
 
                 if (_theWorld[i, j] == _wall)
                 {
-                    Vector3 pos1 = new Vector3(i, 3, j);
-                    Instantiate(_WallPrefab, pos1, Quaternion.identity);
+                    Vector3 pos1 = new Vector3(i, 2, j);
+                    var  border = Instantiate(_WallPrefab, pos1, Quaternion.identity);
+                    border.GetComponent<Case>().SetAcitveBorder();
+                    
                 }
                 else if (_theWorld[i, j] == _grass)
                 {

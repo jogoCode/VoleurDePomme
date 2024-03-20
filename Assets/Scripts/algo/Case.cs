@@ -6,6 +6,7 @@ public class Case : MonoBehaviour
 {
 
     [SerializeField] GameObject[] m_Walls;
+    [SerializeField] bool m_inBorder;
 
     private void Start()
     {
@@ -19,8 +20,17 @@ public class Case : MonoBehaviour
             {
                 wall.SetActive(false);
             }
+            if(m_inBorder == true) 
+            {
+                wall.SetActive(false);
+            }
         
         }
+    }
+
+    public void SetAcitveBorder()
+    {
+        m_inBorder = true;
     }
 
     
