@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] GameManager m_gameManager;
 
+    
     void Start()
     {
         if (!m_appleCountTxt)
