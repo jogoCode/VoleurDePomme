@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     {
         Killable.OnDied += EndGame;
         Pickable.OnPickedUp += AddApple;
+        AppleCountChanged?.Invoke();
     }
 
     

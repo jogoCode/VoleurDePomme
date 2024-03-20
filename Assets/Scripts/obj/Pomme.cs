@@ -13,7 +13,8 @@ public class Pomme : Pickable
     {
         Debug.Log("J'attrape une pomme");
         OnPickedUp();
-        Destroy(gameObject,0.1f);
+        Destroy(gameObject);
+        
     }
 
     void Start()

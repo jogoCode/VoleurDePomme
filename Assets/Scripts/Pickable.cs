@@ -15,6 +15,11 @@ public abstract class Pickable : MonoBehaviour, IPickable
 
     public float Poids { get => m_poids; set => m_poids = value;}//Raccourcis pour les accesseurs
 
+    void Start()
+    {
+        OnPickedUp?.Invoke(); 
+    }
+
     public float GetPoids()
     {
         return m_poids;

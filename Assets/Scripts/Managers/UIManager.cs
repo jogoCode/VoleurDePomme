@@ -26,6 +26,9 @@ public class UIManager : MonoBehaviour
   
    void UpdateDisplay()
     {
-        m_appleCountTxt.text = "Pomme :"+m_gameManager.GetAppleCount();
+        if (m_appleCountTxt)
+        {
+            m_appleCountTxt.text = "Pomme :" + m_gameManager.GetAppleCount();
+        }
     }
 }
